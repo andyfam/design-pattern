@@ -9,6 +9,10 @@ public class Singleton {
         this.data = data;
     }
 
+    public void getData(){
+        System.out.println("data value: " + data);
+    }
+
     public static Singleton getInstance(int data) {
         if (instance == null) {
             synchronized (Singleton.class) {
@@ -19,5 +23,9 @@ public class Singleton {
         }
 
         return instance;
+    }
+
+    public static void main(String[] args) {
+        Singleton.getInstance(1).getData();
     }
 }
