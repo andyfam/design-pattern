@@ -47,6 +47,8 @@ Is a creational design pattern, used in occasions when our client need a supercl
 
 ![](/resources/builder.png)
 
+The builder pattern was introduced to solve some of the problems with factory and abstract Factory design patterns when **the object contains a lot of attributes**. This pattern solves the issue with a large number of optional parameters and inconsistent state by providing a way to **build the object step-by-step** and provide a method that will actually return the final Object.
+
 # Fly Weight
 
 ![](/resources/fly-weight.png)
